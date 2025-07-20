@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CURD.css">
+</head>
+<body>
+<div class="container">
+        
+    <div class="head">
+    <h1>My Store </h1>
+    <p> product management</p>
+    </div>
+
+    <div class="inputs">
+        <input type="text"  id="title" placeholder="Title">
+            <div class="price">
+                <input type="number"  id="price" placeholder="Product Price" onkeyup="getTotal()">
+                <input type="number" id="taxes" placeholder="Taxes" onkeyup="getTotal()">
+                <input type="number" id="discount" placeholder="Discount" onkeyup="getTotal()">
+                <small id="total"> _____</small>
+                <input type="number"  id="count" placeholder="Count">
+
+            </div>
+
+            
+            <input type="text" id="category" placeholder="Category">
+
+            <button  id="submit">Create + </button>
+    </div>
+
+
+    <div class="outputs">
+        <div class="searchBlock">
+
+            <input type="search" id="search"  placeholder="Search" onkeyup="searchMethod(this.value)">   
+            <div class="btnSearch">
+                <button id="searchTitle" name="searchMode" onclick="searchByTitle()">Search By Title</button>
+            <button id="searchCategory" name="searchMode" onclick="searchByCategory()">Search By Category</button>
+
+            
+            </div> 
+            
+        </div>
+
+        <div id="deleteAll"></div>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Taxes</th>
+                <th>Discount</th>
+                <th>Total</th>
+                <th>Category</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+
+            <tbody id="tbody">
+                
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+    
+</body>
+<!-- <script src="product Manage .js"></script> -->
+<script src="CURD.js"></script>
+
+</html>

@@ -1,0 +1,168 @@
+*{
+margin: 0;
+padding: 0;
+
+}  
+
+body{
+
+background-color: rgb(38, 38, 38);    
+color: white;
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.container{
+
+
+    width: 80%;
+    margin:auto ;
+    text-align: center;
+    
+    margin:20px 10% ;
+}
+.head{
+text-transform: uppercase;
+    margin: 10px;
+}
+/* .inputs{
+    width: 50%;
+     text-align: left;
+     display: inherit;
+}
+.outputs {
+    width: 50%;
+    text-align: right;
+} */
+input{
+
+width: 100%;
+height: 30px;
+outline: none;
+border: none;
+background-color: rgb(11, 11, 11);
+margin: 4px 2px;
+border-radius: 4px;
+padding: 0 0px 0px 10px ;
+color: white;
+}
+input:focus{
+
+background-color: rgb(54, 56, 56);
+color: white;
+transition: .2s;
+transform:scale(1.05)
+
+}
+
+.price{
+
+    text-align: left;
+}
+.price input {
+
+    width: 18%;
+   
+}
+
+#total{
+    
+
+background-color: rgb(70, 72, 70);
+padding: 5px 4px;
+border-radius: 4px;
+margin:5px;
+display: flexbox;
+overflow: hidden;
+}
+#total::before{
+    font-size: small;
+    content: "Total :";
+}
+
+button{
+width: 100%;
+height: 28px;
+border: none;
+outline: none;
+border-radius: 10px;
+margin: 10px;
+background-color: rgb(18, 18, 250);
+color: white;
+cursor: pointer;
+}
+button:hover{
+
+background-color: rgb(103, 103, 247);
+letter-spacing: 1px;
+transition: .3s;
+}
+
+
+
+#deleteAll button {
+background-color: rgb(208, 15, 15);
+width: 80%;
+}
+
+
+.btnSearch{
+
+    display: flex;
+    justify-content:space-around ;
+    margin: 5px;
+}
+
+.btnSearch button{
+
+    width: 50%;
+}
+
+table{
+
+width: 99%;
+
+}
+
+ table th{
+
+    text-transform:uppercase;
+    padding:0 8px;
+    border-right: solid 1px rgb(70, 72, 72);
+ }
+
+ table td{
+border-bottom:solid 1px rgb(70, 72, 72); 
+margin: 3px;
+
+ }
+ 
+table button{
+    width:85% ;
+}
+
+ #delete{
+  background-color: rgb(208, 15, 15);
+}
+#delete:hover,#deleteAll button:hover{
+
+     background-color: rgb(208, 80, 80);
+}
+#update{
+     background-color: rgb(21, 196, 5);
+}
+
+table button:hover{
+
+background-color: rgb(103, 103, 247);
+letter-spacing: 0px;
+} 
+
+#search{
+    display: none;
+}
+ /* #searchTitle,#searchCategory{
+
+
+ } */
